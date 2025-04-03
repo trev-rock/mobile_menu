@@ -130,15 +130,16 @@ function payment() {
         if (creditCard.value.length == 16) {
             if (cvc.value.length == 3) {
                 creditDetails.style.display = 'none'
+                thanks.textContent = `Thanks ${name.value}! Your order is on its way`
                 thanks.style.display = 'block'
                 order.style.display = "none"
             } else {
-                console.log("cvc must be 3 digits")
+                alert("cvc must be 3 digits")
             }
         } else {
-            console.log("credit card must be 16 digits")
+            alert("credit card must be 16 digits")
         }
     } else {
-        console.log("name is too short")
+        alert("name is too short")
     }
 }
