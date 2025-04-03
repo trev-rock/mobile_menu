@@ -1,0 +1,46 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Jimmy's Diner</h1>
+                <p>The best burgers and pizzas in town</p>
+            </div>
+        </header>
+        <main id="menu">
+
+        </main>
+
+        <div class="order" id="order">
+            <div class="order-header">
+                <p>Your order</p>
+            </div>
+            <div id="orders"></div>
+            <div class="bottom-border"></div>
+            <div class="total-cost">
+                <p>Total Price:</p>
+                <p id="total-cost"></p>
+            </div>
+            <div class="complete-order">Complete Order</div>
+        </div>
+
+        <div class="card-details" id="credit-details">
+            <h1>Enter card details</h1>
+            <div class="entries">
+                <input type="text" placeholder="Enter your name" id="name">
+                <input name="credit-number" class="cc-number" type="tel" pattern="\d*" maxlength="16" placeholder="Enter card number" id="credit-card">
+                <input name="credit-cvc" type="tel" maxlength="3" placeholder="Enter CVC" id="cvc">
+            </div>
+            <div class="pay" id="pay">Pay</div>
+        </div>
+
+        <div class="thanks" id="thanks">
+            Thanks, Trev! Your order is on its way!
+        </div>
+	<script type="module" src="index.js"></script>
+    </body>
+</html>
+

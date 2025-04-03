@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Smythe";
+    src: url("Smythe.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: "Smythe";
+    /* font-weight: 400; */
+} 
+
+/* top section */
+
+header {
+    background-image: url(/images/header.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 190px;
+    display: flex; 
+    align-items: center; 
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    margin-left: 5em;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+/* main menu */
+/* main {
+    display: flex;
+    flex-direction: column;
+} */
+
+.food-item {
+    display: flex;
+    align-items: center;
+    height: 190px;
+    /* width: 85%; */
+}
+
+.bottom-border {
+    width: 85%;
+    border-bottom: 1px solid #D2D2D2;
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1.5em;
+}
+
+.food {
+    font-size: 4rem;
+}
+
+.add-to-cart {
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  50px;
+    height: 50px;
+}
+
+/* bottom order */
+.order {
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    display: none;
+}
+
+.order .bottom-border {
+    /* width: 85%; */
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+.order-header {
+    text-align: center;
+}
+
+.item-holder {
+    display: flex;
+}
+
+.item-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.item-right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.total-cost {
+    /* font-size: 1.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    font-size: .75rem;
+    color: #BBBBBB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.complete-order {
+    width: 100%;
+    background-color: #16DB99;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+/* enter card details */
+.card-details {
+    font-family: Verdana;
+    font-size: 1.25rem;
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    box-shadow:2px 3px 100px #999;
+    /* display: flex;
+    flex-direction: column; */
+    /* display: block; */
+}
+
+.card-details h1 {
+    font-size: 1.5rem;
+}
+
+.card-details input {
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 1.25rem;
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+}
+
+.pay {
+    width: 85%;
+    background-color: #16DB99;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    margin: 2em auto;
+}
+
+/* thanks  sectionn */
+.thanks {
+    font-size: 2rem;
+    background-color: #ECFDF5;
+    color: #065F46;
+    margin: 30 auto;
+    text-align: center;
+    width: 85%;
+    padding: 20px 10px;
+    display: none;
+}
